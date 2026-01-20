@@ -1,0 +1,1 @@
+This end to end Deep Learning Project uses Simple RNN to classify movie reviews using IMBD dataset to predict sentiment analysis based on reviews of users. Entire project is deployed on streamlit web app.
