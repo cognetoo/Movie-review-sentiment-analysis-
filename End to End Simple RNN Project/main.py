@@ -10,7 +10,12 @@ word_index = imdb.get_word_index()
 reverse_word_index = {value : key for key,value in word_index.items()}
 
 #load the model
-model = load_model('simple_rnn_imdb.keras')
+import os
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "simple_rnn_imdb.keras")
+
+model = load_model(MODEL_PATH)
 
 ##utility functions
 ##1.decode_review
